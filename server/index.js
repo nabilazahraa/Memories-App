@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 
 const Connection =
-  "mongob://127.0.0.1:27017/memories?gssapiServiceName=mongodb";
+  "mongodb+srv://nabila:123@cluster0.lycov.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 makeConnection();
 async function makeConnection() {
