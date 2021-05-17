@@ -1,4 +1,4 @@
-import * as api from "../api";
+import * as api from "../api/index.js";
 
 //Action Creators = functon that return actions
 // Actions are objects that return type and payload
@@ -15,6 +15,6 @@ export const createPost = (post) => async (dispatch) => {
 
     dispatch({ type: "CREATE", payload: data });
   } catch (error) {
-    console.log(error);
+    console.log(error.message);
   }
 };
