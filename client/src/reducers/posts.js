@@ -1,6 +1,6 @@
 import posts from "../components/Posts/Posts";
 
-export default (state = [], action) => {
+export default (posts = [], action) => {
   switch (action.type) {
     case "FETCH_ALL":
       return action.payload;
